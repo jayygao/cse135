@@ -197,3 +197,18 @@ footer {
   border-radius: 0.5rem;
   border-left: 4px solid var(--primary-color);
 }
+
+/* Secret Button */
+.secret-button {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  opacity: 0.1;
+  transition: opacity 0.3s, transform 0.3s;
+  padding: 0.5rem;
+}
+
+.secret-button:hover {
+  opacity: 1;
+  transform: scale(1.2) rotate(20deg);
+}
