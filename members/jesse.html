@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Huang - CSE 135 Member</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Member Profile</h1>
+            <a href="../index.html" style="color: var(--secondary-color); text-decoration: none;">&larr; Back to
+                Team</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <!-- Simple text avatar or image placeholder -->
+                JH
+            </div>
+            <h2>Jesse Huang</h2>
+            <p class="tagline">awesome possum</p>
+        </div>
+
+        <section class="profile-content">
+            <h3>About Me</h3>
+            <p>Hi! I'm Jesse.</p>
+
+            <h3>My Goal</h3>
+            <p>enter ur goal here</p>
+
+            <div id="fun-fact-container">
+                <h4>Dynamic Fun Fact</h4>
+                <p id="fun-fact-text">Loading...</p>
+                <button id="new-fact-btn" class="button">New Fact</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const facts = [
+            "enter 1 here",
+            "enter 2 here."
+        ];
+
+        const factElement = document.getElementById('fun-fact-text');
+        const btnElement = document.getElementById('new-fact-btn');
+
+        function showRandomFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            factElement.textContent = facts[randomIndex];
+            factElement.style.opacity = 0;
+            requestAnimationFrame(() => {
+                factElement.style.transition = 'opacity 0.5s';
+                factElement.style.opacity = 1;
+            });
+        }
+
+        btnElement.addEventListener('click', showRandomFact);
+
+        // Initial load
+        showRandomFact();
+    </script>
+</body>
+
+</html>
