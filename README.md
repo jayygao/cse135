@@ -6,7 +6,7 @@ This is the repository for our CSE 135 Homework 1 Team Site. It contains the mai
 ## Deployment Method
 We use a Git-based deployment workflow.
 
-1. **Local Development**: We develop locally using VS Code.
+1. **Droplet Development**: We built the site via DigitalOcean droplet, but you can also git clone.
 2. **Push to GitHub**: Changes are committed and pushed to the `main` branch.
    ```bash
    git add .
@@ -14,8 +14,8 @@ We use a Git-based deployment workflow.
    git push origin main
    ```
 3. **Deployment**:
-   - We have set up a post-receive hook on our Digital Ocean Droplet (or use a GitHub Action).
-   - When code is pushed to the remote repo, the files are automatically copied to `/var/www/html`.
+   - We have set up a Github action on github for deployment on our droplet whenever we have changes.
+   - When code is pushed to the remote repo, the files are automatically copied to `/var/www/tidydata.online/cse135`.
 
 ## File Structure
 - `index.html`: Main entry point.
@@ -25,3 +25,4 @@ We use a Git-based deployment workflow.
 
 ## Authors
 - Jay Gao
+- Jesse Huang
