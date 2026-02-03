@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+    <script src="https://t.contentsquare.net/uxa/32608bf1106f4.js"></script>
+
+    <script src="https://cdn.logr-in.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('nprzds/tidydatawebsite');</script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D23FQNFGZ4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D23FQNFGZ4');
+    </script>
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE 135 - Team Portal</title>
@@ -52,20 +67,15 @@
                 <h2>Homework 1</h2>
             </div>
             <div class="assignment-list">
-                <a href="#" class="assignment-card">
+                <a href="hw1/hello.php" class="assignment-card">
                     <span class="icon">🐘</span>
                     <span class="title">PHP</span>
-                    <span class="status">Coming Soon</span>
+                    <span class="status">Available</span>
                 </a>
-                <a href="#" class="assignment-card">
-                    <span class="icon">🟩</span>
-                    <span class="title">Node</span>
-                    <span class="status">Coming Soon</span>
-                </a>
-                <a href="#" class="assignment-card">
+                <a href="hw1/report.html" class="assignment-card">
                     <span class="icon">📊</span>
                     <span class="title">Analytics</span>
-                    <span class="status">Coming Soon</span>
+                    <span class="status">Available</span>
                 </a>
             </div>
         </section>
@@ -75,10 +85,69 @@
             <div class="section-header">
                 <h2>Homework 2</h2>
             </div>
-            <div class="assignment-list tbd">
-                <div class="assignment-card disabled">
-                    <span class="title">TBD</span>
+
+            <!-- Echo Form -->
+            <div class="echo-form-card">
+                <div>
+                    <a href="echo-form.html">Echo Test Form</a>
                 </div>
+            </div>
+
+            <!-- Language Cards -->
+            <div class="hw2-grid">
+
+                <!-- Python -->
+                <div class="hw2-lang-card">
+                    <h3>💻 Perl</h3>
+                    <div class="lang-subtitle">CGI Script</div>
+                    <ul>
+                        <li><a href="cgi-bin/perl/hello-html-perl.pl"><span class="link-icon">🌐</span> Hello HTML</a></li>
+                        <li><a href="cgi-bin/perl/hello-json-perl.pl"><span class="link-icon">📄</span> Hello JSON</a></li>
+                        <li><a href="cgi-bin/perl/environment-perl.pl"><span class="link-icon">🔧</span> Environment Variables</a></li>
+                        <li><a href="cgi-bin/perl/echo-perl.pl"><span class="link-icon">📡</span> Echo</a></li>
+                        <li><a href="cgi-bin/perl/state-perl.pl"><span class="link-icon">💾</span> State Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Python -->
+                <div class="hw2-lang-card">
+                    <h3>🐍 Python</h3>
+                    <div class="lang-subtitle">CGI Script</div>
+                    <ul>
+                        <li><a href="cgi-bin/python/hello-html-python.py"><span class="link-icon">🌐</span> Hello HTML</a></li>
+                        <li><a href="cgi-bin/python/hello-json-python.py"><span class="link-icon">📄</span> Hello JSON</a></li>
+                        <li><a href="cgi-bin/python/environment-python.py"><span class="link-icon">🔧</span> Environment Variables</a></li>
+                        <li><a href="cgi-bin/python/echo-python.py"><span class="link-icon">📡</span> Echo</a></li>
+                        <li><a href="cgi-bin/python/state-python.py"><span class="link-icon">💾</span> State Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- PHP -->
+                <div class="hw2-lang-card">
+                    <h3>🐘 PHP</h3>
+                    <div class="lang-subtitle">CGI Script</div>
+                    <ul>
+                        <li><a href="cgi-bin/php/hello-html-php.php"><span class="link-icon">🌐</span> Hello HTML</a></li>
+                        <li><a href="cgi-bin/php/hello-json-php.php"><span class="link-icon">📄</span> Hello JSON</a></li>
+                        <li><a href="cgi-bin/php/environment-php.php"><span class="link-icon">🔧</span> Environment Variables</a></li>
+                        <li><a href="cgi-bin/php/echo-php.php"><span class="link-icon">📡</span> Echo</a></li>
+                        <li><a href="cgi-bin/php/state-php.php"><span class="link-icon">💾</span> State Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Node.js -->
+                <div class="hw2-lang-card">
+                    <h3>🟩 Node.js</h3>
+                    <div class="lang-subtitle">Express (proxied by Apache)</div>
+                    <ul>
+                        <li><a href="/hello-html-nodejs"><span class="link-icon">🌐</span> Hello HTML</a></li>
+                        <li><a href="/hello-json-nodejs"><span class="link-icon">📄</span> Hello JSON</a></li>
+                        <li><a href="/environment-nodejs"><span class="link-icon">🔧</span> Environment Variables</a></li>
+                        <li><a href="/echo-nodejs"><span class="link-icon">📡</span> Echo</a></li>
+                        <li><a href="/state-nodejs"><span class="link-icon">💾</span> State Demo</a></li>
+                    </ul>
+                </div>
+
             </div>
         </section>
     </main>

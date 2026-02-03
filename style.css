@@ -124,7 +124,7 @@ h3 {
 
 .assignment-card .status {
   font-size: 0.8rem;
-  color: #6b7280;
+  color: green;
   background: #f3f4f6;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
@@ -211,4 +211,83 @@ footer {
 .secret-button:hover {
   opacity: 1;
   transform: scale(1.2) rotate(20deg);
+}
+
+.hw2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.hw2-lang-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.hw2-lang-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 6px -1px rgba(37,99,235,0.1);
+}
+
+.hw2-lang-card h3 {
+  margin: 0 0 0.25rem;
+}
+
+.hw2-lang-card .lang-subtitle {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.hw2-lang-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hw2-lang-card ul li {
+  margin: 0.4rem 0;
+}
+
+.hw2-lang-card ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+
+.hw2-lang-card ul li a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.echo-form-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 2px solid var(--primary-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.echo-form-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.echo-form-card a:hover {
+  text-decoration: underline;
 }

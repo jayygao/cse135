@@ -1,0 +1,13 @@
+{
+    "name": "cse135-node-app",
+    "version": "1.0.0",
+    "description": "CSE 135 Homework 2 - Node.js with Express",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "uuid": "^9.0.0"
+    }
+  }
